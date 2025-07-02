@@ -141,32 +141,6 @@ To self-host the nodeauth.app application, you can take advantage of a pre-built
 
 Note: Once the application is deployed, please wait for 3-5 minutes for the swagger docs to be available.
 
-# 🧪 Testing
-
-To ensure reliability & stability for our end users, we utilize Playwright, a powerful testing framework to automate testing across all endpoints.
-
-### 💻 Run the Test Server
-
-Make sure to add `MONGO_MEMORY_SERVER_PORT=10000` (mongodb port for e2e testing) in your `.env` file.
-
-```bash
-yarn start:test-server
-```
-
-### 🧪 Run Tests
-
-```bash
-yarn test:playwright
-```
-
-This will generate a Playwright report. To view this report run the following command
-
-```bash
-yarn playwright show-report
-```
-
-Make sure all the test cases are passed whenever you make any changes.
-
 # How to contribute - Guidelines
 
 ## ⚡️ Contribute in core nodeauth codebase:
