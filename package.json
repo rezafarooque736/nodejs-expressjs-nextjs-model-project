@@ -1,7 +1,7 @@
 {
-  "name": "nodeauth",
+  "name": "nodejs-expressjs-nextjs-model-project",
   "version": "1.0.0",
-  "description": "A API learning go",
+  "description": "An API learning project",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
@@ -11,11 +11,11 @@
     "eslint": "npx eslint ."
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unkown"
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farooque-reza/nodeauth.git"
+    "url": "git+https://github.com/farooque-reza/nodejs-expressjs-nextjs-model-project.git"
   },
   "keywords": [
     "open source",
@@ -24,9 +24,9 @@
   "author": "Farooque Reza",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/farooque-reza/nodeauth/issues"
+    "url": "https://github.com/farooque-reza/nodejs-expressjs-nextjs-model-project/issues"
   },
-  "homepage": "https://github.com/farooque-reza/nodeauth#readme",
+  "homepage": "https://github.com/farooque-reza/nodejs-expressjs-nextjs-model-project#readme",
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
     "bcrypt": "^5.1.0",
