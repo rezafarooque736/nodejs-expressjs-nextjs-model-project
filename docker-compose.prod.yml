@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  backend:
+    image: nodeauth-server
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/usr/src/nodeauth
+      - /usr/src/nodeauth/node_modules
+    env_file:
+      - ./.env
+    depends_on:
+      - mongodb
+    networks:
+      - nodeauth-internal
+  
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    volumes:
+      - data:/data/db
+    networks:
+      - nodeauth-internal
+
+networks:
+  nodeauth-internal:
+
+volumes:
+  data:
