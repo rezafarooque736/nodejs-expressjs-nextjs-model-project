@@ -1,10 +1,9 @@
-import dotenv from "dotenv";
+import process from "process";
 import connectDB from "./db/index.js";
 import { httpServer } from "./app.js";
 import logger from "./logger/winston.logger.js";
 
 // Load environment variables
-dotenv.config({ path: "./.env" });
 
 // Validate required environment variables
 const PORT = process.env.PORT || 8080;

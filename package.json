@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "start": "dotenvx run -- nodemon --experimental-json-modules src/index.js",
     "pre-commit": "lint-staged",
     "prepare": "node prepare.js",
     "eslint": "npx eslint ."
@@ -28,12 +28,12 @@
   },
   "homepage": "https://github.com/rezafarooque736/nodejs-expressjs-nextjs-model-project#readme",
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.45.2",
     "@faker-js/faker": "^8.0.2",
-    "bcrypt": "^5.1.0",
+    "bcryptjs": "^3.0.2",
     "cookie": "^1.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
     "express": "4.21.1",
     "express-compression": "^1.0.2",
     "express-rate-limit": "^6.7.0",
